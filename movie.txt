@@ -1,14 +1,14 @@
 1.a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
 
 code - 
-class Movie {
-    constructor (title, studio, rating){
+class Movie {                                   //created class as Movie
+    constructor (title, studio, rating){        //created constructor for class Movie with title , studio and rating as properties
         this.title = title;
         this.studio = studio;
         this.rating = rating; 
     }
 }
-let movie1 = new Movie("Spirited Away", "Ghibil Studio", "PG");
+let movie1 = new Movie("Spirited Away", "Ghibil Studio", "PG");        //creted method with property values
 let movie2 = new Movie('The Gray Man', "Netflix", "PG-13");
 
 console.log(movie1, movie2)
@@ -20,8 +20,8 @@ Movie { title: 'Spirited Away', studio: 'Ghibil Studio', rating: 'PG' }  Movie {
 
 code- 
 
-class Movie {
-    constructor (title, studio, rating="PG"){
+class Movie {                                                           //created class as Movie
+    constructor (title, studio, rating="PG"){                           //setting PG as default value for rating property
         this.title = title;
         this.studio = studio;
         this.rating = rating; 
@@ -38,15 +38,15 @@ Movie { title: 'Spirited Away', studio: 'Ghibil Studio', rating: 'PG' } Movie { 
 1.d)  Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”.
 
 code- 
-class Movie{
-    constructor(title,studio,rating='PG'){
+class Movie{                                                        //created class as Movie
+    constructor(title,studio,rating='PG'){                              
         this.title=title;
         this.studio=studio;
         this.rating=rating;
     }
 
 }
-var movie1= new Movie('Casino Royale','Eon Productions','PG13');
+var movie1= new Movie('Casino Royale','Eon Productions','PG13');    //creted method with property values
 
 console.log(movie1);
 
